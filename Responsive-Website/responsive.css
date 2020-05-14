@@ -1,0 +1,75 @@
+/* === For your Responsive CSS === */
+
+
+
+/* CSS for Small Devices / Smartphone */
+
+
+img { 
+    max-width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        grid-template-columns: 100%;
+        background-color: yellow;
+    }
+    #nav a {
+        display: block;
+        background-color: orange;
+        text-align: center;
+        padding: .3rem;
+    }
+    #logo {
+        text-align: center;
+    }
+    
+    #splash {
+        grid-column: 1/2;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        height: 10.7rem;
+    }
+    
+    #app {
+        grid-column: 1/2;
+    }
+    main {
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+    
+    footer {
+        grid-auto-columns: 100%;
+        text-align: center;
+        background-color: yellow;
+        color: orange;
+        padding: .3rem;
+    }
+}
+
+/* CSS for large device/ Computers */
+
+@media screen and (min-width: 601px) {
+   #mobile-menu {
+        display: none;
+    }
+}
+    
+/*Light mode*/ 
+
+@media (prefers-color-scheme: light){
+            body {
+                background-color: white; 
+                color: black;
+    }
+}
+    
+/* Dark mode*/
+    
+ @media (prefers-color-scheme: dark){
+        body {
+            background-color: black;
+            color: white;
+        }
+    }
