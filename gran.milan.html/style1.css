@@ -12,7 +12,7 @@ body {
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-size: 14pt;
     line-height: 18pt;
-    background-color: #262D33;
+    background-color: whitesmoke;
     padding: 0;
     margin: 0;
     color: #052e00;
@@ -26,15 +26,24 @@ header {
     padding: 40px 20px 40px 20px;
     background-color: whitesmoke;
     grid-template-columns: 50% 50%;
+    font-family: 'Helvetica';
 }
 
+main {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-row-gap: 25px;
+}
 
 footer {
+     font-family: 'Helvetica';
     display: grid;
+    padding: 0 70px;
     color: whitesmoke;
-    height: 20px;
-    text-align: right;
-    font-size: 10pt;
+    height: 30px;
+    text-align: center;
+    margin: 20px;
+    font-size:10pt;
 }
 
 nav {
@@ -49,38 +58,80 @@ a {
 }
 
 h1 {
-    font-family: 'Abril Fatface', cursive;
-    font-weight: normal;
+    font-family: 'futura';
+    font-weight: bold;
     font-size: 42pt; 
-    color: #262D33;
+    color: #1D4E11;
     margin: 0 0;
 }
 
+h2 {
+
+    text-align: center;
+}
 
 
+.splash {
+    background-size: cover;
+    min-height: 300px;
+    background-image: url("pastries2.jpg");
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 100pt;
+    padding-top: 180pt;
+	padding-left: 20pt;
+    display: block;
+}
+
+#splashSection {
+    display: flex;
+    background-color: whitesmoke;
+    background-position: center center;
+    height: 500px;
+     display: flex; 
+
+}
+
+#splash2 {
+     grid-template-columns: 33.33% 33.33% 33.33%;
+    background-image: url(milan05.jpg);
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin: 20px;
+
+}
+
+#splash3 {
+     grid-template-columns: 33.33% 33.33% 33.33%;
+    background-image: url(milan07.jpg);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 20px;
+    
+}
+
+
+li { 
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+}
 
 #milan { 
-   display: flex;
-    align-content: center;
-    text-align: center;
-    padding-left:90px;
-    padding-top:190px;
-    margin-left: 100px;
-    font-size:11pt;
-    font-family: 'Helvetica';
-    background-image: url(background.jpg)
+    display: grid; 
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-template-columns: 33.33% 33.33% 33.33%;
 }
 
-#milan-text-1 {
+#milan-text-1,
+#milan-text-2 {
     padding:70px;
-    color: whitesmoke;
+    color: #298235;
     text-align: center;
-    line-height: 20pt;
     font-family: 'Helvetica';
-    font-weight: 100;
+    line-height: 25pt;
 }
 
-button {
-   background-color: aquamarine;
-}
 /* === Add New CSS Below === */
