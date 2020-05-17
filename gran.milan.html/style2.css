@@ -12,7 +12,7 @@ body {
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-size: 14pt;
     line-height: 18pt;
-    background-color: #262D33;
+    background-color: whitesmoke;
     padding: 0;
     margin: 0;
     color: #052e00;
@@ -57,10 +57,10 @@ a {
 }
 
 h1 {
-    font-family: 'Abril Fatface', cursive;
-    font-weight: normal;
+    font-family: 'futura';
+    font-weight: bold;
     font-size: 42pt; 
-    color: #262D33;
+    color: #264810;
     margin: 0 0;
 }
 
@@ -68,11 +68,12 @@ h1 {
 .splash {
     background-size: cover;
     min-height: 300px;
-    background-image: url(milan09.jpg);
+    background-image: url("focaccia2.jpg");
     color: whitesmoke;
     font-weight: bold;
     font-size: 100pt;
     padding-top: 180pt;
+	padding-left: 20pt;
     display: block;
 }
 
@@ -114,7 +115,7 @@ h1 {
 #milan-text-1,
 #milan-text-2 {
     padding:70px;
-    color: whitesmoke;
+    color: #298235;
     text-align: center;
     font-family: 'Helvetica';
     line-height: 25pt;
