@@ -12,7 +12,7 @@ body {
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-size: 14pt;
     line-height: 18pt;
-    background-color: #262D33;
+    background-color: white;
     padding: 0;
     margin: 0;
     color: #052e00;
@@ -31,10 +31,10 @@ footer {
      font-family: 'Helvetica';
     display: grid;
     padding: 0 70px;
-    color: whitesmoke;
+    color: #4D4D4D;
     height: 30px;
     text-align: center;
-    margin: 200px;
+    
     font-size: 10pt;
 }
 
@@ -51,27 +51,32 @@ a {
 }
 
  h1 {
-     margin-left: 540px;
+     text-align: center;
+	 font-family: 'futura';
+	 font-size: 80pt;
 }
 
 
 .splash {
     background-size: cover;
     
-    background-image: url("home.jpg");
+    background-image: url("coffee.jpeg");
     color: whitesmoke;
     font-weight: bold;
-    font-size: 80pt;
-    padding-top: 180pt;
+    font-size: 60pt;
+    padding-left: 20pt;
     display: block;
+	line-height: 120%;
 }
 
 #splashSection {
     display: flex;
+    align-content: center ;
+    justify-content: center;
     background-color: whitesmoke;
     background-position: center center;
     height: 500px;
-     display: flex; 
+    display: flex; 
 
 }
 
@@ -88,6 +93,10 @@ a {
   margin-left: 500px;
   margin-right: auto;
   width: 40%;
+}
+p {
+	
+	
 }
 
 /* === Add New CSS Below === */
