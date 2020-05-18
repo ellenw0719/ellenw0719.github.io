@@ -44,6 +44,7 @@ nav {
     
 	margin-right: 2.68px;
 	text-align: right;
+    margin-left: 10.7rem;
 	
 	
 }
@@ -85,9 +86,7 @@ p {
 .column {
   float: right;
 }
-nav {
-	margin-left: 10.7rem;
-}
+
 img {
 	margin-left: 25%;
 }
