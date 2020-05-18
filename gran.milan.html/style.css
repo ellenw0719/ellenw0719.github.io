@@ -10,12 +10,12 @@ Lab: Basics Grids and Flexbox
 
 body {
     font-family: 'Helvetica', 'Arial', sans-serif;
-    font-size: 14pt;
-    line-height: 18pt;
+    font-size: 1rem;
+    line-height: 1.29rem;
     padding: 0;
     margin: 0;
     color: white;
-	height: 500px;
+	height: 26.8rem;
 	display: grid;
 	background: url("pastry.jpg");
 	background-repeat: no-repeat;
@@ -34,7 +34,7 @@ header {
 }
 
 main {
-    padding: 20px;
+    padding: 1rem;
 	grid-row-gap: 25px;
 }
 
@@ -42,7 +42,7 @@ main {
 
 nav {
     
-	margin-right: 50px;
+	margin-right: 2.68px;
 	text-align: right;
 	
 	
@@ -51,17 +51,17 @@ nav {
 a {
     text-decoration: none;
     color: #3B3B3B;
-    margin: 20px;
+    margin: 1rem;
 	
 }
 
 h1 {
 	font-family: 'Abril Fatface';
     font-weight: normal;
-    font-size: 50pt;
+    font-size: 3.6rem;
     color: black;
     margin-top: 10%;
-	margin-left: 600px;
+	margin-left: 32.14rem;
 }
 
 
@@ -70,15 +70,15 @@ p {
 	display: grid;
 	grid-template-columns: 50% 50%;
 	background-color: #262D33;
-	padding-top: 20px;
-		padding-bottom: 20px;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-top: 1rem;
+		padding-bottom: 1rem;
+	padding-left: 2.68rem;
+	padding-right: 2.68rem;
 	width: 75%;
 	margin-left: 12%;
-	font-size: 12px;
+	font-size: 0.9rem;
 	text-align: center;
-	margin-top:-70px;
+	margin-top:-3.75rem;
 	opacity: 0.7;
 	
 }
@@ -86,7 +86,7 @@ p {
   float: right;
 }
 nav {
-	margin-left: 200px;
+	margin-left: 10.7rem;
 }
 img {
 	margin-left: 25%;
