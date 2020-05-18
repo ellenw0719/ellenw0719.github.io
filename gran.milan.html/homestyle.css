@@ -10,8 +10,8 @@ Lab: Basics Grids and Flexbox
 
 body {
     font-family: 'Helvetica', 'Arial', sans-serif;
-    font-size: 14pt;
-    line-height: 18pt;
+    font-size: 1rem;
+    line-height: 1.29rem;
     background-color: white;
     padding: 0;
     margin: 0;
@@ -30,30 +30,30 @@ header {
 footer {
      font-family: 'Helvetica';
     display: grid;
-    padding: 0 70px;
+    padding: 0 3.75rem;
     color: #4D4D4D;
-    height: 30px;
+    height: 1.6rem;
     text-align: center;
-    
-    font-size: 10pt;
+    margin: 1rem;
+    font-size: 0.7rem;
 }
 
 nav {
  grid-template-columns: 33.33% 33.33% 33.33%;
-    margin-left: 130px;
+    margin-left: 8.125rem;
 }
 
 a { 
     text-decoration: none;
     color: #262D33;
-   padding: 140px;
-    font-size: 13pt;
+   padding: 11rem;
+    font-size: 1rem;
 }
 
  h1 {
      text-align: center;
 	 font-family: 'futura';
-	 font-size: 80pt;
+	 font-size: 3rem;
 }
 
 
@@ -63,19 +63,19 @@ a {
     background-image: url("coffee.jpeg");
     color: whitesmoke;
     font-weight: bold;
-    font-size: 60pt;
-    padding-left: 20pt;
+    font-size: 4rem;
+    padding-left: 9.64rem;
     display: block;
 	line-height: 120%;
 }
 
-#splashSection {
+#splashSection1 {
     display: flex;
     align-content: center ;
     justify-content: center;
     background-color: whitesmoke;
     background-position: center center;
-    height: 500px;
+    height: 26.8rem;
     display: flex; 
 
 }
@@ -90,7 +90,7 @@ a {
 
 .center {
   display: block;
-  margin-left: 500px;
+  margin-left: 31.25rem;
   margin-right: auto;
   width: 40%;
 }
