@@ -10,8 +10,8 @@ Lab: Basics Grids and Flexbox
 
 body {
     font-family: 'Helvetica', 'Arial', sans-serif;
-    font-size: 14pt;
-    line-height: 18pt;
+    font-size: 1rem;
+    line-height: 1.29rem;
     background-color: whitesmoke;
     padding: 0;
     margin: 0;
@@ -37,12 +37,12 @@ main {
 footer {
      font-family: 'Helvetica';
     display: grid;
-    padding: 0 70px;
+    padding: 0 0.37rem;
     color: whitesmoke;
-    height: 30px;
+    height: 1.6rem;
     text-align: center;
-    margin: 20px;
-    font-size:10pt;
+    margin: 1rem;
+    font-size: 0.7rem;
 }
 
 nav {
@@ -59,7 +59,7 @@ a {
 h1 {
     font-family: 'futura';
     font-weight: bold;
-    font-size: 42pt; 
+    font-size: 3rem; 
     color: #264810;
     margin: 0 0;
 }
@@ -67,13 +67,13 @@ h1 {
 
 .splash {
     background-size: cover;
-    min-height: 300px;
+    min-height: 16rem;
     background-image: url("focaccia2.jpg");
     color: whitesmoke;
     font-weight: bold;
-    font-size: 100pt;
-    padding-top: 180pt;
-	padding-left: 20pt;
+    font-size: 7rem;
+    padding-top: 9.64rem;
+	padding-left: 1rem;
     display: block;
 }
 
@@ -81,7 +81,7 @@ h1 {
     display: flex;
     background-color: whitesmoke;
     background-position: center center;
-    height: 500px;
+    height: 26.8rem;
      display: flex; 
 
 }
@@ -91,7 +91,7 @@ h1 {
     background-image: url(milan05.jpg);
     grid-column-start: 2;
     grid-column-end: 4;
-    margin: 20px;
+    margin: 1rem;
 
 }
 
@@ -100,7 +100,7 @@ h1 {
     background-image: url(milan07.jpg);
     grid-column-start: 1;
     grid-column-end: 3;
-    margin: 20px;
+    margin: 1rem;
     
 }
 
@@ -114,11 +114,11 @@ h1 {
 
 #milan-text-1,
 #milan-text-2 {
-    padding:70px;
+    padding:3.75rem;
     color: #298235;
     text-align: center;
     font-family: 'Helvetica';
-    line-height: 25pt;
+    line-height: 1.4rem;
 }
 
 /* === Add New CSS Below === */
