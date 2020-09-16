@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function Basics 2</title>
+<!-- Do NOT REMOVE script below -->
+<script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+
+<!--
+
+=== INSTRUCTIONS ===
+
+== load images
+
+To add images we need them to be hosted on a web server. I've already hosted the images here.
+
+puppy: https://davidhurwich.github.io/427/puppy.jpg
+kitty: https://davidhurwich.github.io/427/kitty.jpg
+panda: https://davidhurwich.github.io/427/panda.jpg
+
+== Add Variable
+
+begin by creating a new variable.
+
+== Add preload() ===
+
+Next add preload(){} before the setup()
+
+use loadImage to load the image to the variable
+
+variable = loadImage(file url);
+
+== setup ==
+
+Use image(variable, x-position, y-position); to set the image and it's location inside the canvas.
+-->
+
+
+<script>
+
+    let kittyImg;
+    let pandaImg;
+    let puppyImg;
+    
+    function preload(){
+        kittyImg = loadImage('https://davidhurwich.github.io/427/kitty.jpg');  
+        pandaImg = loadImage('https://davidhurwich.github.io/427/panda.jpg');
+        puppyImg =
+        loadImage('https://davidhurwich.github.io/427/puppy.jpg');
+    }
+    
+   
+    function setup(){
+        createCanvas(500,500);
+        background(200);
+        image(kittyImg,50,50);
+        image(pandaImg,200,200);
+        image(puppyImg,100,100);
+        
+    }
+    
+    
+   
+    
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>
