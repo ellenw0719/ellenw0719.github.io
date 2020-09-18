@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bubble</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+    <script>
+
+let imgGif;
+let circle;
+let duckImg;
+let bg;
+    
+        
+function preload(){
+    
+    imgGif = createImg("abubble.gif");
+    duckImg =
+ loadImage("https://ellenw0719.github.io/Bubble/duck.jpg");
+    bg = loadImage("https://ellenw0719.github.io/Bubble/duck_fam.png"); 
+    
+}
+        
+function setup(){
+
+    createCanvas(500,500);
+}
+        
+function draw(){
+    imgGif.position(50,50);
+    background(bg);
+}
+        
+    </script>
+    </head>
+    <body>
+    </body>
+</html>
