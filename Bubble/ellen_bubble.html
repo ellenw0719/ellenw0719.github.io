@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>bubble</title>
-    
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
     <script>
-    
-        let imgGif;
-       
+
+ let imgGif;   
+ let mouseX;
+ let mouseY;
+ let bubbleOn = "true"
+        
 function preload(){
     
     imgGif = createImg("abubble.gif");
@@ -15,15 +18,34 @@ function preload(){
  
     
 function setup(){
-    
-        createCanvas(1000,1000);
-        background('0');
-    }
+    createCanvas(500,500);
+    background("#ab916d");
+ }
         
-    function draw(){
+function draw(){
+        if (bubbleOn === "true"){
+        }
+        else {
+        background ('pink');
+        }
         imgGif.position(50,50);
-    }
+        print(mouseX, mouseY);
+        fill("#c9ffed")
+        circle(mouseX, mouseY, 50)
+       noStroke()
+    randomColor = color(random(0,500))
+    fill(randomColor)
+    circle=random(0,500)
+    circleDiameter= random(20,300);
+}
         
+function mousePressed(){
+    bubbleOn='false'
+ 
+        
+        
+    }
+}
   
     
     </script>
