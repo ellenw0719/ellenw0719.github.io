@@ -10,6 +10,8 @@ let imgGif;
 let circleX;
 let circleY;
 let duckImg;
+let duck2Img;
+let duck3Img;
 let bg;
 let mouseX;
 let mouseY;
@@ -29,7 +31,14 @@ function preload(){
     
     //keyPressed
     duckImg=
-loadImage("https://ellenw0719.github.io/Bubble/duck.jpg");
+loadImage("https://ellenw0719.github.io/Bubble/duck_3.png");
+    
+    duck2Img=
+loadImage("https://ellenw0719.github.io/Bubble/duck_2.png");
+    
+    duck3Img=
+loadImage("https://ellenw0719.github.io/Bubble/duck_1.png");
+
     
     //background
     bg = loadImage("https://ellenw0719.github.io/Bubble/duck_fam.jpg"); 
@@ -92,6 +101,8 @@ function mousePressed(){
     
 function keyPressed(){
     image(duckImg,200,300);
+    image(duck2Img,300,400);
+    image(duck1Img,350,350);
     
 }
 </script>
