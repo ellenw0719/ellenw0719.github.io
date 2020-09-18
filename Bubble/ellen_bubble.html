@@ -19,6 +19,7 @@
 function preload(){
     
     imgGif = createImg("abubble.gif");
+    duckImg = loadImage('http://ellenw0719.github.io/Bubble/duck.jpg');
 }
  
     
@@ -55,7 +56,8 @@ function mousePressed(){
     }
 
 function keyPressed(){
-    duckImg = loadImage('http://ellenw0719.github.io/Bubble/duck.jpg');
+        image(duckImg,50,50);
+    
 }
     
     </script>
