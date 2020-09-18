@@ -13,6 +13,7 @@
  let mouseX;
  let mouseY;
  let duckImg;
+ let bg;
 
 
         
@@ -20,17 +21,19 @@ function preload(){
     
     imgGif = createImg("abubble.gif");
     duckImg = loadImage('http://ellenw0719.github.io/Bubble/duck.jpg');
+    img= loadImage('duck_fam.png');
 }
  
     
 function setup(){
-    createCanvas(500,500);
-    background('#c9f0d4');
+    createCanvas(1000,1000);
+    bg = loadImage('duck_fam.png');
+
  }
         
 function draw(){
-
- imgGif.position(50,50); 
+ imgGif.position(50,50);
+ background(bg);
  
 }
         
@@ -38,6 +41,7 @@ function mousePressed(){
     noStroke()
     randomColor = color(random(0,500))
     fill(randomColor);
+
     
      if (bubbleOn === "true"){
         circle=random(0,500);
