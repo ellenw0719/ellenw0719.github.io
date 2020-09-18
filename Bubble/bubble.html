@@ -7,7 +7,8 @@
     <script>
 
 let imgGif;
-let circle;
+let circleX;
+let circleY;
 let duckImg;
 let bg;
 let mouseX;
@@ -15,14 +16,29 @@ let mouseY;
 let bubbleOn="true";
 let circleDiameter;
 let randomColor;
+let music;
+let soundFX;
+let textX;
+let textY;
 
 
 function preload(){
+    //ariel
     
     imgGif = createImg("abubble.gif");
-    duckImg =
- loadImage("https://ellenw0719.github.io/Bubble/duck.jpg");
+    
+    //keyPressed
+    duckImg=
+loadImage("https://ellenw0719.github.io/Bubble/duck.jpg");
+    
+    //background
     bg = loadImage("https://ellenw0719.github.io/Bubble/duck_fam.jpg"); 
+    
+    //music
+    music = createAudio("https://ellenw0719.github.io/Bubble/ariel.mp4");
+    
+    soundFX = createAudio("https://ellenw0719.github.io/Bubble/ariel.mp4");
+    
     
 }
         
@@ -37,23 +53,38 @@ function draw(){
     imgGif.position(50,50);
     background(bg);
       
+    //mouse
     print(mouseX, mouseY);
     fill(randomColor);
     circle(mouseX,mouseY,50);
 }
         
 function mousePressed(){
-    noStorke()
-    randomColor = color(random(0,500));
-    circle = random(0,500);
-    circleDiameter = random(0,100);
+    //mp4
+   soundFX.autoplay(true);
     
-    if(bubbleOn === "true"){
-        fill(randomColor);
-        circle = random(0,500);
+    //circle
+    noStroke()
+    shapes = shapes + 1
+    randomColor = color(random(0,500));
+    
+    if(bubbleOn === "true"){ 
+    fill(randomColor);
+    circleX = random(0,500);
+    circleY = random(0,500);
+    circleDiameter = random(0,200);
     }
+    
     else {
-        background("white");
+        
+    print("you have clicked the mouse");
+    fill(randomColor);
+    textSize(20)
+    textFont("Lemondrop");
+    text("what's think color?",textX,textY);
+    textX = random(0,500);
+    textY = random(0,500); 
+    textDiameter = random(0,200);
     }
     
     
@@ -63,7 +94,7 @@ function keyPressed(){
     image(duckImg,50,50);
     
 }
-    </script>
+</script>
     </head>
     <body>
     </body>
