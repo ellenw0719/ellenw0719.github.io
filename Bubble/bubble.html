@@ -10,6 +10,13 @@ let imgGif;
 let circle;
 let duckImg;
 let bg;
+let mouseX;
+let mouseY;
+let circleDiameter;
+let circleX;
+let circleY;
+let x,y;
+let bubbleOn="true";
     
         
 function preload(){
@@ -31,6 +38,30 @@ function draw(){
     background(bg);
 }
         
+function mousePressed(){
+    if (bubbleOn === "true"){
+        fill(randomColor);
+        circleX=random(0,500);
+        circleY=random(0,500);
+    }
+    else { 
+    background(bg);
+    }
+
+    print(mouseX,moouseY);
+        circle(mouseX, mouseY, 50)
+        mouseX= random(0,200);
+        mouseY= random(0,200);
+        circleDiameter= random(20,100);
+        circle(circleX,circleY,circleDiameter,x,y);
+        noStroke();
+     x = x + random(-1.1);
+     y = y - 1;
+}
+    
+function keyPressed(){
+    image(duckImg,50,50);
+}
     </script>
     </head>
     <body>
