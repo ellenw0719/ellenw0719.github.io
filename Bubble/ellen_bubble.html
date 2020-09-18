@@ -7,13 +7,12 @@
     <script>
 
  let imgGif;
- let bubbleOn;
- let bubbleOff;
+ let bubbleOn='true';
  let circle;
  let mouseX;
  let mouseY;
  let duckImg;
- let bg;
+ let famImg;
 
 
         
@@ -21,33 +20,37 @@ function preload(){
     
     imgGif = createImg("abubble.gif");
     duckImg = loadImage('http://ellenw0719.github.io/Bubble/duck.jpg');
-    img= loadImage('duck_fam.png');
+    famImg= loadImage('duck_fam.png');
 }
  
     
 function setup(){
-    createCanvas(1000,1000);
-    bg = loadImage('duck_fam.png');
+    createCanvas(500,500);
+    image(famImg,50,50);
+    background('#7ef2d5');
+  
 
  }
         
 function draw(){
  imgGif.position(50,50);
- background(bg);
+ 
  
 }
         
 function mousePressed(){
     noStroke()
-    randomColor = color(random(0,500))
-    fill(randomColor);
+    randomColor = color(random(0,500));
+    circle=random(0,500);
+    circleDiameter = random(0,100);
 
     
      if (bubbleOn === "true"){
-        circle=random(0,500);
+         fill(randomColor);
+         circle=random(0,500);
  }   
          else {
-        (bubbleOFF === "false")
+        background('white');
         }
   
      print(mouseX, mouseY);
@@ -61,6 +64,7 @@ function mousePressed(){
 
 function keyPressed(){
         image(duckImg,50,50);
+        bubbleOn='false';
     
 }
     
