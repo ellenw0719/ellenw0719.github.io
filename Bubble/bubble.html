@@ -22,6 +22,8 @@ let music;
 let soundFX;
 let textX;
 let textY;
+let bubble1Img;
+let bubble2Img;
 
 
 function preload(){
@@ -38,7 +40,12 @@ loadImage("https://ellenw0719.github.io/Bubble/duck_2.png");
     
     duck3Img=
 loadImage("https://ellenw0719.github.io/Bubble/duck_1.png");
+    
+    bubble1Img=
+loadImage("https://ellenw0719.github.io/Bubble/bubble_1.png");
 
+    bubble2Img=
+loadImage("https://ellenw0719.github.io/Bubble/bubble_2.png");
     
     //background
     bg = loadImage("https://ellenw0719.github.io/Bubble/duck_fam.jpg"); 
@@ -103,6 +110,9 @@ function keyPressed(){
     image(duckImg,200,300);
     image(duck2Img,300,400);
     image(duck1Img,350,350);
+    //bubble
+    image(bubble1Img,150,150);
+    image(bubble2Img,250,250);
     
 }
 </script>
