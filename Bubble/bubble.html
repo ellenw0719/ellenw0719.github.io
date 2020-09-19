@@ -12,6 +12,7 @@ let circleY;
 let duckImg;
 let duck2Img;
 let duck3Img;
+let duck4Img;
 let bg;
 let mouseX;
 let mouseY;
@@ -24,6 +25,7 @@ let textX;
 let textY;
 let bubble1Img;
 let bubble2Img;
+
 
 
 
@@ -42,11 +44,16 @@ loadImage("https://ellenw0719.github.io/Bubble/duck_2.png");
     duck3Img=
 loadImage("https://ellenw0719.github.io/Bubble/duck_1.png");
     
+    duck4Img=
+ loadImage("https://ellenw0719.github.io/Bubble/duck_4.png");
+    
     bubble1Img=
 loadImage("https://ellenw0719.github.io/Bubble/bubble_1.png");
 
     bubble2Img=
 loadImage("https://ellenw0719.github.io/Bubble/bubble_2.png");
+    
+    
     
     //background
     bg = loadImage("https://ellenw0719.github.io/Bubble/duck_fam.jpg"); 
@@ -62,8 +69,7 @@ loadImage("https://ellenw0719.github.io/Bubble/bubble_2.png");
 function setup(){
 
     createCanvas(500,500);
-    speedX = random(0,100);
-    speedY = random(0,100);
+ 
 }
         
 function draw(){
@@ -71,9 +77,7 @@ function draw(){
     background(bg);
       
     //mouse
-    print(mouseX, mouseY);
-    fill(randomColor);
-    circle(mouseX,mouseY,50);
+
 }
         
 function mousePressed(){
@@ -81,28 +85,7 @@ function mousePressed(){
    soundFX.autoplay(true);
     
     //circle
-    noStroke()
-    shapes = shapes + 1
-    randomColor = color(random(0,500));
-    
-    if(bubbleOn === "true"){ 
-    fill(randomColor);
-    circleX = random(0,500);
-    circleY = random(0,500);
-    circleDiameter = random(0,200);
-    }
-    
-    else {
-        
-    print("you have clicked the mouse");
-    fill(randomColor);
-    textSize(20)
-    textFont("Lemondrop");
-    text("what's think color?",textX,textY);
-    textX = random(0,500);
-    textY = random(0,500); 
-    textDiameter = random(0,200);
-    }
+  
     
     
 }
@@ -112,6 +95,7 @@ function keyPressed(){
     image(duckImg,200,300);
     image(duck2Img,150,400);
     image(duck3Img,300,350);
+    image(duck4Img,290,290);
     //bubble
     image(bubble1Img,240,385);
     image(bubble2Img,350,400);
