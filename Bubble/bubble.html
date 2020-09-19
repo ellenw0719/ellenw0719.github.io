@@ -25,6 +25,8 @@ let textX;
 let textY;
 let bubble1Img;
 let bubble2Img;
+let textDiameter;
+let circleDiameter;
 
 
 
@@ -35,7 +37,7 @@ function preload(){
     imgGif = createImg("abubble.gif");
     
     //keyPressed
-    duckImg=
+   duckImg=
 loadImage("https://ellenw0719.github.io/Bubble/duck_3.png");
     
     duck2Img=
@@ -52,8 +54,7 @@ loadImage("https://ellenw0719.github.io/Bubble/bubble_1.png");
 
     bubble2Img=
 loadImage("https://ellenw0719.github.io/Bubble/bubble_2.png");
-    
-    
+
     
     //background
     bg = loadImage("https://ellenw0719.github.io/Bubble/duck_fam.jpg"); 
@@ -75,31 +76,37 @@ function setup(){
 function draw(){
     imgGif.position(50,50);
     background(bg);
-      
-    //mouse
-
-}
+    
+    if(bubbleOn === 'true');
+    fill(randomColor);
+    circleX = random(0,300);
+    circleY = random(0,300);
+    circleDiameter = random(0,300);
+    
+    else{
+        
+    print("you have clicked the mouse");
+    textSize(20);
+    textFont("lemondrop");
+    text("name the color",textX,textY)
+    textX = random(0,200);
+    textY = random(0,200);
+    textDiameter= random(0,200);
+    }
         
 function mousePressed(){
     //mp4
    soundFX.autoplay(true);
-    
-    //circle
-  
-    
-    
 }
     
 function keyPressed(){
-    
     image(duckImg,200,300);
-    image(duck2Img,150,400);
-    image(duck3Img,300,350);
-    image(duck4Img,290,290);
+    image(duck2Img,150,250);
+    image(duck3Img,90,350);
+    image(duck4Img,250,190);
     //bubble
-    image(bubble1Img,240,385);
-    image(bubble2Img,350,400);
-    
+    image(bubble1Img,10,285);
+    image(bubble2Img,300,310);
 }
 </script>
     </head>
