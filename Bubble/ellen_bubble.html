@@ -17,7 +17,7 @@ let duck3Img;
 let duck4Img;
 let bubble1Img;
 let bubble2Img;
-let click =0;
+let pressed =0;
 
         
 function preload(){
@@ -95,24 +95,24 @@ function keyPressed(){
      //duck
     
 click ++;
-if(click ===1){ 
+if(prssed ===1){ 
     image(duckImg,300,300);
 }
-else if(click ===2){
+else if(prssed ===2){
     image(duck2Img,180,400);
 }
-else if(click ===3){
+else if(prssed ===3){
     image(duck3Img,250,350);
 }
-else if(click ===4){
+else if(prssed ===4){
     image(duck4Img,150,290);
 }
 
     //bubble
-else if(click ===5){
+else if(prssed ===5){
     image(bubble1Img,330,405);
 }
-else if(click ===6){
+else if(prssed ===6){
     image(bubble2Img,100,410);
 }
 }
