@@ -6,49 +6,32 @@
     <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
     <script>
 
-let imgGif;
-let bg;
+let imgGif1;
+let imgGif2;
 let music;
 let soundFX;
+let hover = false;
 let duckImg;
 let duck2Img;
 let duck3Img;
 let duck4Img;
-let shapes = 0;
-let circleDiameter;
-let color1="#b6f2de";
-let color2="#f2fab4";
-let color3="#d4fcbb";
-let color4="#f2c0b6";
-let color5="#fce7bb";
-let color6="#baffe8";
-let color7="#b2d8f7";
-let color8="#d5c0fa";
-let color9="#f4c0fc";
-let color10="#f7b5d8";
-let x,y;
-let textX;
-let textY;
-let textDiameter;
-let circleX;
-let circleY;
-
+let bubble1Img;
+let bubble2Img;
+let click =0;
 
         
 function preload(){
     //ariel
     
-    imgGif = createImg("abubble.gif");
-
-      //background
-    bg = loadImage("https://ellenw0719.github.io/Bubble/duck_fam.jpg"); 
+    imgGif1 = createImg("Bubble.GIF");
+    imgGif2 = createImg("Bubble_night.GIF");
     
         //music
     music = createAudio("https://ellenw0719.github.io/Bubble/ariel.mp4");
     
     soundFX = createAudio("https://ellenw0719.github.io/Bubble/ariel.mp4");
     
-        //keyPressed
+            //keyPressed
    duckImg=
 loadImage("https://ellenw0719.github.io/Bubble/duck_3.png");
     
@@ -66,6 +49,7 @@ loadImage("https://ellenw0719.github.io/Bubble/bubble_1.png");
 
     bubble2Img=
 loadImage("https://ellenw0719.github.io/Bubble/bubble_2.png");
+
     
 
 }
@@ -73,16 +57,20 @@ loadImage("https://ellenw0719.github.io/Bubble/bubble_2.png");
   
 function setup(){
 
-    createCanvas(500,500);
-    background(bg);
+    createCanvas(600,600);
+    background(0);
+    imgGif1.position(0,0);
+    imgGif2.position(0,0);
+    imgGif2.hide();
  
 }
         
 function draw(){
-    imgGif.position(50,50);
-    prnt(mouseX, mouseY);
-    fill("#b6f2de");
-    circle(mouseX, mouseY, 50);
+    if(hover === true){
+        imgGif2.show();
+    } else {
+        imgGif2.hide();
+    }
  
 }
     //bubbleOn
@@ -91,66 +79,42 @@ function mousePressed(){
     //mp4
     soundFX.autoplay(true);
     
-    //bubble
-    
-    noStroke();
-    shapes = shapes + 1
-    randomColor = color(random(0,500));
-    
-    if(shapes < 30){
-    fill(255,0,0,63);
-    circleX = random(0,300);
-    circleY = random(0,300);
-    
-    color1Circle = random(0,300);
-    color2Circle = random(0,300);
-    color3Circle = random(0,300);
-    color4Circle = random(0,300);
-    color5Circle = random(0,300);
-    color6Circle = random(0,300);
-    color7Circle = random(0,300);
-    color8Circle = random(0,300);
-    color9Circle = random(0,300);
-    color10Circle = random(0,300);
-        
-  noStroke();
-fill(random(255,0,0,63),random(255,0,0,127),random(255,0,0,63));
-
-
-let size = random(70);
-ellipse(random(400)+50,random(400)+50, size, size);
-
-        
-
-circle("circleX,circleY,circleDiameter,x,y");
-
+    //night
+    if(hover === false){
+        hover = true;   
+        print("true");
     }
-        
-        else {
-  print("Name the Color");
-    textSize(10);
-    textFont("Lemondrop");
-    text("bubble",textX,textY)
-    textX = random(0,500);
-    textY = random(0,500);
-    textDiameter= random(0,200);
-    fill(random(255),random(255),random(255));
+    else {
+        hover = false;
+        print("false");
     }
+
 }
     
 function keyPressed(){
      //duck
+    
+click ++;
+if(click ===1){ 
     image(duckImg,300,300);
+}
+else if(click ===2){
     image(duck2Img,180,400);
+}
+else if(click ===3){
     image(duck3Img,250,350);
+}
+else if(click ===4){
     image(duck4Img,150,290);
+}
 
     //bubble
-    
+else if(click ===5){
     image(bubble1Img,330,405);
+}
+else if(click ===6){
     image(bubble2Img,100,410);
-
-
+}
 }
 </script>
     </head>
